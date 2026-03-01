@@ -55,34 +55,36 @@
         .controls {
             display: flex;
             justify-content: center;
-            gap: 5px;
+            gap: 6px;
             margin: 0;
             flex-wrap: nowrap;
             flex-shrink: 0;
             flex-grow: 0;
-            padding: 6px 4px;
-            background: rgba(0,0,0,0.5);
-            border-radius: 8px;
+            padding: 8px 6px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 10px;
             order: 999;
             z-index: 100;
             position: relative;
             bottom: 0;
-        }
-        .btn {
-            padding: 8px 10px;
-            font-size: 0.7rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-            flex: 1;
-            max-width: 65px;
-            min-width: 50px;
-            white-space: nowrap;
             -webkit-tap-highlight-color: transparent;
         }
-        .btn:active { transform: scale(0.9); }
+        .btn {
+            padding: 10px 12px;
+            font-size: 0.75rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            flex: 1;
+            max-width: 70px;
+            min-width: 55px;
+            white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        .btn:active { transform: scale(0.88); opacity: 0.9; }
         .btn:disabled { opacity: 0.3; cursor: not-allowed; }
         .btn-fold { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; }
         .btn-check { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; }
